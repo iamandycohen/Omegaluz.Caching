@@ -1,0 +1,11 @@
+﻿@model IEnumerable<KeyValuePair<string, object>>
+
+<h3>Cache:</h3>
+<ol>
+    @foreach (var item in Model)
+    {
+        <li>
+            @item.Key - @item.Value
+        </li>
+    }
+</ol>
